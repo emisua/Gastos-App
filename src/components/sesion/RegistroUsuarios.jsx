@@ -1,4 +1,17 @@
+import Layout from '../Layout'
+import { routes } from '../../routes'
+import { backIcon } from '../../icons/icons'
+
 const RegistroUsuarios = () => {
-	return <h1>RegistroUsuarios</h1>
+	return (
+		<>
+			<Layout
+				headerAlign='left'
+				headerTitle='Crea tu cuenta de usuario'
+				headerLinkBtn1={routes.home}
+				headerBtn1={backIcon}
+			></Layout>
+		</>
+	)
 }
 export default RegistroUsuarios

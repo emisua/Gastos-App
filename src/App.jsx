@@ -6,6 +6,7 @@ import GastosCategoria from './components/gastos/GastosCategoria'
 import EditarGasto from './components/gastos/EditarGasto'
 import Home from './components/Home'
 import { routes } from './routes'
+import AddGasto from './components/gastos/AddGasto'
 
 function App() {
 	return (
@@ -15,6 +16,8 @@ function App() {
 				<Route path={routes.register} element={<RegistroUsuarios />} />
 				<Route path={routes.listGastos} element={<ListaGastos />} />
 				<Route path={routes.categories} element={<GastosCategoria />} />
+				<Route path={routes.addGasto} element={<AddGasto />} />
+
 				<Route path={routes.editGasto} element={<EditarGasto />} />
 				<Route index path={routes.home} element={<Home />} />
 			</Routes>
