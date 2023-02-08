@@ -10,7 +10,16 @@ const RegistroUsuarios = () => {
 				headerTitle='Crea tu cuenta de usuario'
 				headerLinkBtn1={routes.home}
 				headerBtn1={backIcon}
-			></Layout>
+			>
+				<form>
+					<input
+						type='text'
+						placeholder='Nombre de usuario'
+						className='input w-full max-w-xs'
+						value={user}
+					/>
+				</form>
+			</Layout>
 		</>
 	)
 }
